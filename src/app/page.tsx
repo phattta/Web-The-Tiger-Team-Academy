@@ -5,6 +5,7 @@ import Programs from './components/Programs';
 import Everyone from './components/Everyone';
 import Success from './components/Success';
 import Partners from './components/Partners';
+import Performance from './components/Performance'; 
 import About from './components/About';
 import Values from './components/Values';
 import Team from './components/Team';
@@ -21,6 +22,7 @@ export default function Page() {
       <Everyone />
       <Success />
       <Partners />
+      <Performance />
       <About />
       <Values />
       <Team />

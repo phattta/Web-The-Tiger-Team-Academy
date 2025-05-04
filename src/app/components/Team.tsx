@@ -150,7 +150,7 @@ export default function Team() {
 
       {/* Core Team */}
       <div className="max-w-7xl mx-auto mb-8 md:mb-12">
-        <h3 className="text-xl md:text-2xl font-bold text-[#011133] mb-6 text-center">Core Team</h3>
+        <h3 className="text-xl md:text-2xl font-bold text-[#011133] mb-6 text-center">Co-Founder</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 px-4">
           {coreTeam.map((member, idx) => (
             <Card key={idx} {...member} />
@@ -160,7 +160,7 @@ export default function Team() {
 
       {/* Industry Mentors */}
       <div className="max-w-7xl mx-auto mb-8 md:mb-12">
-        <h3 className="text-xl md:text-2xl font-bold text-[#011133] mb-6 text-center">Industry Mentors</h3>
+        <h3 className="text-xl md:text-2xl font-bold text-[#011133] mb-6 text-center">Core Team</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 px-4">
           {mentors.map((mentor, idx) => (
             <Card key={idx} {...mentor} />

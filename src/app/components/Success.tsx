@@ -58,14 +58,14 @@ const projects = [
 export default function Success() {
   const [activeCategory, setActiveCategory] = useState('All Projects');
   const [currentIndex, setCurrentIndex] = useState(0);
-  
+
   const filteredProjects = activeCategory === 'All Projects'
     ? projects
     : projects.filter((p) => p.category === activeCategory);
 
   const handlePageChange = (direction: 'prev' | 'next') => {
     if (activeCategory !== 'All Projects') return;
-    
+
     if (direction === 'prev') {
       setCurrentIndex((prev) => {
         const newIndex = prev - 1;
@@ -84,12 +84,12 @@ export default function Success() {
     setCurrentIndex(0);
   };
 
-  const displayedProjects = activeCategory === 'All Projects' 
+  const displayedProjects = activeCategory === 'All Projects'
     ? [
-        filteredProjects[currentIndex],
-        filteredProjects[(currentIndex + 1) % filteredProjects.length],
-        filteredProjects[(currentIndex + 2) % filteredProjects.length]
-      ]
+      filteredProjects[currentIndex],
+      filteredProjects[(currentIndex + 1) % filteredProjects.length],
+      filteredProjects[(currentIndex + 2) % filteredProjects.length]
+    ]
     : filteredProjects;
 
   return (
@@ -104,11 +104,10 @@ export default function Success() {
             <button
               key={cat}
               onClick={() => handleCategoryChange(cat)}
-              className={`px-4 py-2 rounded border text-sm font-medium ${
-                activeCategory === cat
-                  ? 'bg-orange-500 text-white border-orange-500'
-                  : 'border-[#011133] text-[#011133]'
-              }`}
+              className={`px-4 py-2 rounded border text-sm font-medium ${activeCategory === cat
+                ? 'bg-orange-500 text-white border-orange-500'
+                : 'border-[#011133] text-[#011133]'
+                }`}
             >
               {cat}
             </button>
@@ -120,7 +119,7 @@ export default function Success() {
         {displayedProjects.map((project, idx) => (
           <div key={idx} className="bg-white rounded-lg shadow overflow-hidden">
             <div className="relative">
-              <Image src={project.image} alt={project.title} className="h-48 w-full object-cover"width={300} height={300} />
+              <Image src={project.image} alt={project.title} className="h-48 w-full object-cover" width={300} height={300} />
               <span className="absolute top-2 right-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded">
                 {project.category}
               </span>
@@ -147,7 +146,7 @@ export default function Success() {
           >
             <Image src="/icon9.svg" alt="Previous" width={16} height={16} />
           </button>
-          <button 
+          <button
             className="w-10 h-10 rounded-full border border-[#011133] flex items-center justify-center text-[#011133] hover:bg-gray-200 transition-all duration-300"
             onClick={() => handlePageChange('next')}
           >
