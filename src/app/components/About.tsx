@@ -47,7 +47,7 @@ export default function About() {
           />
 
           {/* Quote Box */}
-          <div className="absolute sm:bottom-[-40px] md:-bottom-[120px] sm:right-[-10px] bottom-[-80px] right-0 bg-white shadow-xl rounded-lg p-4 sm:p-6 w-[90%] sm:w-full sm:max-w-xs mx-auto">
+          <div className="absolute sm:bottom-[-40px] md:-bottom-[180px] lg:-bottom-30 xl:-bottom-10 sm:right-[-10px] bottom-[-80px] right-0 bg-white shadow-xl rounded-lg p-4 sm:p-6 w-[90%] sm:w-full sm:max-w-xs mx-auto">
             <p className="italic text-gray-700 mb-2 sm:mb-3 text-sm sm:text-base">
               &ldquo;We&apos;re not just teaching code—we&apos;re nurturing the next generation of leaders who will use technology to transform our world.&rdquo;
             </p>
