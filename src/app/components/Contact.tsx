@@ -17,7 +17,7 @@ export default function Contact() {
       {/* Content Grid */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-4">
         {/* Left Panel */}
-        <div className="bg-white rounded-lg p-6 md:p-8 shadow-md w-full lg:w-[440px] min-h-[512px]">
+        <div className="rounded-lg p-6 md:p-8 shadow-md w-full lg:w-[440px] min-h-[512px]">
           <h3 className="text-xl md:text-2xl font-bold text-[#011133] mb-6">Get In Touch</h3>
 
           {/* Email */}
@@ -40,9 +40,9 @@ export default function Contact() {
               </svg>
             </div>
             <div>
-              <p className="font-bold text-[#011133]">Email</p>
-              <p className='text-gray-600 text-sm'>info@tigerteamacademy.edu</p>
-              <p className='text-gray-600 text-sm'>admissions@tigerteamacademy.edu</p>
+              <p className="font-bold text-[#011133] text-base sm:text-lg">Email</p>
+              <p className='text-gray-600 text-sm sm:text-sm break-all'>info@tigerteamacademy.edu</p>
+              <p className='text-gray-600 text-sm sm:text-sm break-all'>admissions@tigerteamacademy.edu</p>
             </div>
           </div>
 

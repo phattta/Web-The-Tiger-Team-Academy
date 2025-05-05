@@ -5,7 +5,7 @@ export default function Home() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-white flex flex-col items-center justify-center px-4 sm:px-6">
             <div className="absolute top-0 right-0 w-1/2 h-full bg-[rgb(247,147,27)] opacity-5 rounded-bl-full z-0"></div>
-            <div className="absolute bottom-0 left-0 md:-bottom-100 lg:bottom-0 w-2/3 h-1/2 md:w-2/3 md:h-5/6 lg:w-2/3 lg:h-1/2 bg-[#011133] opacity-5 rounded-tr-full z-0"></div>
+            <div className="absolute bottom-0 left-0 md:-bottom-100 lg:bottom-0 w-2/3 h-1/2 md:w-2/3 md:h-5/6 lg:w-2/3 lg:h-1/2 bg-[#011133] opacity-15 rounded-tr-full z-0"></div>
 
             {/* Section Container */}
             <div className="max-w-7xl w-full grid lg:grid-cols-2 gap-8 md:gap-12 items-center mt-[40px] lg:mt-[135px]">

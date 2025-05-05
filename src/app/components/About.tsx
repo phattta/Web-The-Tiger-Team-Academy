@@ -47,12 +47,12 @@ export default function About() {
           />
 
           {/* Quote Box */}
-          <div className="absolute bottom-[-40px] right-[-10px] bg-white shadow-xl rounded-lg p-6 w-full max-w-xs">
-            <p className="italic text-gray-700 mb-3">
+          <div className="absolute sm:bottom-[-40px] md:-bottom-[120px] sm:right-[-10px] bottom-[-80px] right-0 bg-white shadow-xl rounded-lg p-4 sm:p-6 w-[90%] sm:w-full sm:max-w-xs mx-auto">
+            <p className="italic text-gray-700 mb-2 sm:mb-3 text-sm sm:text-base">
               &ldquo;We&apos;re not just teaching code—we&apos;re nurturing the next generation of leaders who will use technology to transform our world.&rdquo;
             </p>
-            <p className="font-bold text-[#011133]">Prof. James Chen</p>
-            <p className="text-sm text-gray-600">Founder & Academic Director</p>
+            <p className="font-bold text-[#011133] text-sm sm:text-base">Prof. James Chen</p>
+            <p className="text-xs sm:text-sm text-gray-600">Founder & Academic Director</p>
           </div>
         </div>
       </div>
